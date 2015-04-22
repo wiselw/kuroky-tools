@@ -1,1 +1,10 @@
-/target
+
+target
+bin
+.settings
+
+*.project
+*.jar
+*.class
+*.classpath
+*.log
