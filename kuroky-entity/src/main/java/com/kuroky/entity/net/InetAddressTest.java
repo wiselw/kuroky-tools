@@ -7,6 +7,12 @@ import java.net.UnknownHostException;
 public class InetAddressTest {
 
 	public static void main(String[] args) throws IOException {
+		InetAddress local1=InetAddress.getLocalHost();
+		System.out.println(local1.getCanonicalHostName());
+		System.out.println(local1.getHostName().toString());
+		
+		
+		
 		// TODO Auto-generated method stub
 		InetAddress ip=InetAddress.getByName("www.baidu.com");
 		System.out.println("是否可达："+ip.isReachable(5000));
@@ -17,6 +23,8 @@ public class InetAddressTest {
 		System.out.println(local.getHostAddress());
 		//全限定域名
 		System.out.println(local.getCanonicalHostName());
+		System.out.println(local.getHostName().toString());
+		
 		
 	}
 
